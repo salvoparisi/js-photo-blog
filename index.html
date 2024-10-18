@@ -13,8 +13,16 @@
             integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
             crossorigin="anonymous"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sometype+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
         <style>
             header{
+                font-family: 'Sometype Mono', sans-serif;
+                font-style: italic;
                 background-image: url(./assets/img/wall.png);
                 h1{
                     font-size: 80px;
@@ -27,6 +35,17 @@
                 width: 300px;
                 height: 300px;
             }
+            .card-text{
+                width: 332px;
+                height: 400px;
+                font-size: 20px;
+                font-family: 'Edu TAS Beginner', sans-serif;
+            }
+            .pin{
+                position: relative;
+                bottom: 25px;
+                left: 130px;
+            }
         </style>
     </head>
 
@@ -34,24 +53,25 @@
         <header>
             <h1 class="text-center py-3 m-0">Estate '24</h1>
         </header>
-        <main class="d-flex justify-content-center">
-            <div class="m-3 card-text">
-                <div class="card-img bg-white">
-                    
+        <main class="d-flex justify-content-center pt-5 flex-wrap">
+            <div class="m-3 p-3 card-text bg-white ">
+                <div class="card-img bg-primary">
+                    <img src="./assets/img/pin.svg" class="pin" alt="">
                 </div>
-                Lorem, ipsum dolor.
+                <div class="pt-2">Lorem, ipsum dolor.</div>
             </div>
-            <div class="m-3 card-text">
-                <div class="card-img bg-white">
+            <div class="m-3 p-3 card-text bg-white">
+                <div class="card-img bg-primary">
+                    <img src="./assets/img/pin.svg" class="pin" alt="">
                     
                 </div>
-                Lorem, ipsum dolor.
+                <div class="pt-2">Lorem, ipsum dolor.</div>
             </div>
-            <div class="m-3 card-text">
-                <div class="card-img bg-white">
-                    
+            <div class="m-3 p-3 card-text bg-white">
+                <div class="card-img bg-primary">
+                    <img src="./assets/img/pin.svg" class="pin" alt="">
                 </div>
-                Lorem, ipsum dolor.
+                <div class="pt-2">Lorem, ipsum dolor.</div>
             </div>
         </main>
         <footer>
