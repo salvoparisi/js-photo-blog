@@ -1,0 +1,37 @@
+header{
+    font-family: 'Sometype Mono', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    background-image: url(./img/wall.png);
+    div{
+        font-size: 80px;
+        transform: scaleY(1.2);
+    }
+}
+main{
+    background-image: url(./img/cork.png);
+}
+.card-img{
+    width: 300px;
+    height: 300px;
+    .img-in{
+        width: 300px;
+    }
+}
+.card-text{
+    width: 332px;
+    height: 400px;
+    font-size: 20px;
+    font-family: 'Edu TAS Beginner', sans-serif;
+}
+.pin{
+    position: relative;
+    top: 40px;
+    left: 164px;
+}
+.card-container{
+    max-width: 1200px;
+}
+.cards{
+    height: 430px;
+}
