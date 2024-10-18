@@ -13,11 +13,14 @@ fetch('https://jsonplaceholder.typicode.com/photos?_limit=6')
     })
     for (let i = 0; i < data.length; i++) {
         main.innerHTML+=`
-            <div class="m-3 p-3 card-text bg-white ">
-                <div class="card-img bg-primary">
-                    <img src="./assets/img/pin.svg" class="pin" alt="">
+            <div class="cards">
+                <img src="./assets/img/pin.svg" class="pin" alt="">
+                <div class="m-3 p-3 card-text bg-white shadow-lg">
+                    <div class="card-img bg-primary">
+                        <img src="${imgPosts[i]}" class="img-in">
+                    </div>
+                    <div class="pt-2">${titlePosts[i]}</div>
                 </div>
-                <div class="pt-2">${titlePosts[i]}</div>
             </div>
         `;
     }
