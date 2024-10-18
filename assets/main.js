@@ -1,6 +1,4 @@
 let main=document.querySelector('.card-container')
-let titlePosts=[]
-let imgPosts=[]
 
 fetch('https://jsonplaceholder.typicode.com/photos?_limit=6')
 .then(response => response.json())
