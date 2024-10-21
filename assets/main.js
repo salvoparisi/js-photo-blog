@@ -1,6 +1,6 @@
 let main=document.querySelector('.card-container')
-let test=document.getElementById('test')
 let overlay=document.getElementById('overlay')
+let cards=[]
 let cardsDoc=[]
 let cardsImg=[]
 let cardsTitle=[]
@@ -43,9 +43,18 @@ function docs(){
                 overlay.style.display = 'none'
             })
         })
+        cardsDoc[z].addEventListener('mouseenter', function(){
+            cardsDoc[z].classList.toggle('transform-hover');
+        })
+        cardsDoc[z].addEventListener('mouseleave', function() {
+            cardsDoc[z].classList.remove('transform-hover');
+        });
+        
     }
-
+    
 }
+
+
 
 
 

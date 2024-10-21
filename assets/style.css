@@ -10,7 +10,6 @@ header{
 }
 main{
     background-image: url(./img/cork.png);
-    
 }
 .card-img{
     width: 300px;
@@ -35,6 +34,12 @@ main{
 }
 .cards{
     height: 430px;
+    position: relative;
+}
+.cards:hover{
+    .pin{
+        display: none;
+    }
 }
 
 #overlay {
@@ -51,5 +56,11 @@ main{
 }
 
 .overImg{
-    width: 600px;
+    width: 500px;
+}
+
+.transform-hover{
+    transform: scale(1.1) rotate(10deg);
+    transition: transform 0.5s ease;
+    cursor: pointer;
 }
