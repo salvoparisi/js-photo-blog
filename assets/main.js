@@ -1,4 +1,6 @@
 let main=document.querySelector('.card-container')
+let test=document.getElementById('test')
+let closeOverlay=document.getElementById('closeOverlay')
 
 fetch('https://jsonplaceholder.typicode.com/photos?_limit=6')
 .then(response => response.json())
@@ -18,6 +20,13 @@ fetch('https://jsonplaceholder.typicode.com/photos?_limit=6')
     })
 });
 
+test.addEventListener('click', function(){
+    overlay.style.display = 'flex'
+})
+
+closeOverlay.addEventListener('click', function(){
+    overlay.style.display = 'none'
+})
 
 
 
