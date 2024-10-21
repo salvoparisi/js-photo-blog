@@ -15,7 +15,7 @@ fetch('https://jsonplaceholder.typicode.com/photos?_limit=6')
         main.innerHTML+=`
             <div class="cards" id="card${i}">
                 <img src="./assets/img/pin.svg" class="pin" alt="">
-                <div class="m-3 p-3 card-text bg-white shadow-lg">
+                <div class="m-3 p-3 card-text bg-white card-shadow">
                     <div class="card-img bg-primary">
                         <img src="${cardsImg[i]}" class="img-in">
                     </div>
@@ -49,9 +49,7 @@ function docs(){
         cardsDoc[z].addEventListener('mouseleave', function() {
             cardsDoc[z].classList.remove('transform-hover');
         });
-
     }
-    
 }
 
 
