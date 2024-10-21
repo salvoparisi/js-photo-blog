@@ -38,6 +38,7 @@ main{
     .card-shadow{
         box-shadow: 0px 0px 20px;
     }
+    transition: transform 0.5s ease;
 }
 .cards:hover{
     .pin{
@@ -65,7 +66,6 @@ main{
 
 .transform-hover{
     transform: scale(1.1) rotate(10deg);
-    transition: transform 0.5s ease;
     cursor: pointer;
     position: relative;
     top: 35px;
@@ -74,3 +74,4 @@ main{
     }
     z-index: 1;
 }
+
