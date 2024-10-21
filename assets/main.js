@@ -49,7 +49,7 @@ function docs(){
         cardsDoc[z].addEventListener('mouseleave', function() {
             cardsDoc[z].classList.remove('transform-hover');
         });
-        
+
     }
     
 }

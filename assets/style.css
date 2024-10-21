@@ -63,4 +63,6 @@ main{
     transform: scale(1.1) rotate(10deg);
     transition: transform 0.5s ease;
     cursor: pointer;
+    position: relative;
+    top: 35px;
 }
