@@ -50,3 +50,6 @@ main{
     flex-direction: column;
 }
 
+.overImg{
+    width: 600px;
+}
