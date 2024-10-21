@@ -34,27 +34,31 @@ fetch('https://jsonplaceholder.typicode.com/photos?_limit=6')
 });
 
 
-setTimeout(docs, 1000)
+let interval = setInterval(docs, 100)
 function docs(){
-    for(let z=0; z<i; z++){
-        cardsDoc[z]=document.getElementById(`card${z}`)
-        cardsDoc[z].addEventListener('click', function(){
-            overlay.style.display = 'flex'
-            overlay.innerHTML=`
-                <img src="${cardsImg[z]}" class="overImg" alt="">
-                <button id="closeOverlay" class="btn btn-primary mt-5">Chiudi</button>
-            `
-            let closeOverlay=document.getElementById('closeOverlay')
-            closeOverlay.addEventListener('click', function(){
-                overlay.style.display = 'none'
+    if(i>5){
+        for(let z=0; z<i; z++){
+            cardsDoc[z]=document.getElementById(`card${z}`)
+            cardsDoc[z].addEventListener('click', function(){
+                cardsDoc[z].classList.remove('transform-hover')
+                overlay.style.display = 'flex'
+                overlay.innerHTML=`
+                    <img src="${cardsImg[z]}" class="overImg" alt="">
+                    <button id="closeOverlay" class="btn btn-primary mt-5">Chiudi</button>
+                `
+                let closeOverlay=document.getElementById('closeOverlay')
+                closeOverlay.addEventListener('click', function(){
+                    overlay.style.display = 'none'
+                })
             })
-        })
-        cardsDoc[z].addEventListener('mouseenter', function(){
-            cardsDoc[z].classList.toggle('transform-hover');
-        })
-        cardsDoc[z].addEventListener('mouseleave', function() {
-            cardsDoc[z].classList.remove('transform-hover');
-        });
+            cardsDoc[z].addEventListener('mouseenter', function(){
+                cardsDoc[z].classList.toggle('transform-hover');
+            })
+            cardsDoc[z].addEventListener('mouseleave', function() {
+                cardsDoc[z].classList.remove('transform-hover');
+            });
+        }
+        clearInterval(interval)
     }
 }
 
