@@ -6,12 +6,18 @@ let cardsImg=[]
 let cardsTitle=[]
 let i=0;
 
+function upFirstChar(word){
+    let firstChar = word.charAt(0).toUpperCase()
+    finalWord = firstChar + word.slice(1)
+    return finalWord
+}
+
 fetch('https://jsonplaceholder.typicode.com/photos?_limit=6')
 .then(response => response.json())
 .then(data=>{
     data.forEach(obj =>{
         cardsImg[i]=obj.thumbnailUrl
-        cardsTitle[i]=obj.title
+        cardsTitle[i]=upFirstChar(obj.title)
         main.innerHTML+=`
             <div class="cards" id="card${i}">
                 <img src="./assets/img/pin.svg" class="pin" alt="">
